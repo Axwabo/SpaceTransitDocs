@@ -1,4 +1,10 @@
 #vaulterContainer {
     width: 500px;
     height: 400px;
+    background-color: black;
+    position: relative;
+}
+
+#clock {
+    font-size: 30px;
 }

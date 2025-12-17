@@ -16,5 +16,20 @@ const route101 = [
     [ "Leafel", "08:18", "08:18", 1 ],
     [ "Moshunover", "08:20", "08:21", 1 ],
     [ "Kimdown-Charleshouse", "08:25", "08:25", 1 ],
-    [ "Gyuard", "08:34", null, 3 ],
+    [ "Gyuard", "08:34", null, 3 ]
 ];
+
+/**
+ * @type {[string, string | null, string | null, number][]}
+ */
+let currentRoute = route100;
+
+const clock = document.getElementById("clock");
+
+setInterval(updateTime, 1000);
+
+updateTime();
+
+function updateTime() {
+    return clock.innerText = new Date().toLocaleTimeString("hu-HU");
+}
