@@ -1,3 +1,44 @@
+@font-face {
+    font-family: Tektur;
+    src: url("fonts/Tektur/Tektur-VariableFont_wdth,wght.ttf");
+}
+
+* {
+    box-sizing: border-box;
+}
+
 :root {
     color-scheme: dark;
+    font-family: Tektur, Arial, sans-serif;
+    font-size: 1.5em;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    padding: 0.5rem;
+    background-color: black;
+}
+
+nav a:not([href]) {
+    font-weight: bold;
+}
+
+main {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
 }
